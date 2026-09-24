@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Object-Oriented Programming Quiz</h1>
+    
+    <div class="quiz-selector">
+        <select id="quiz-range">
+            <option value="1-10">Questions 1-10 (OOP Fundamentals)</option>
+            <option value="11-20">Questions 11-20 (Inheritance & Polymorphism)</option>
+            <option value="21-30">Questions 21-30 (Advanced Concepts)</option>
+            <option value="all">All Questions (1-30)</option>
+        </select>
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+    
+    <div id="quiz-interface" class="hidden">
+        <div class="progress">
+            Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+        </div>
+        
+        <div class="quiz-container">
+            <div class="question" id="question-text"></div>
+            <div class="options" id="options-container"></div>
+            <div class="explanation" id="explanation"></div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        
+        <div class="score" id="score-container">
+            Your score: <span id="score">0</span>/<span id="total">10</span>
+        </div>
+    </div>
+    <div class="contact">
+        <p>Follow me on  </p>
+        <a href="https://github.com/AnandhusUthaman"><i class="fa-brands fa-git" style="color: #0d0d0d;"></i></a>
+        <a href="https://www.linkedin.com/in/anandhu-s-uthaman-a44bb3309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin" style="color: #0d0d0d;"></i></a>
+        <a href="https://www.instagram.com/aandhhu?igsh=MWl0MWxnMzM0dmhucw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram" style="color: #121212;"></i></a>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
